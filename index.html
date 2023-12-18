@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatak</title>
+</head>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<script src="https://kit.fontawesome.com/1625cb88aa.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="style.css">
+
+<body>
+    <!-- <div class="">
+
+    </div> -->
+    <!-- navbar start**************** -->
+    <nav class="topheader navbar bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">CHATAK NEWS</a>
+            <!-- <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" id="search_input" aria-label="Search">
+                <p class="text-center my-auto"><i class="fa-solid fa-magnifying-glass fa-xl"></i></p>
+            </form> -->
+        </div>
+    </nav>
+    <!-- navbar end**************** -->
+
+    <!-- Sidebar start -->
+    <div class="w3-sidebar santo_sidebar" style="width:20%">
+        <img src="images/india_flag.jpg" class="india_flag" alt="">
+        Lang <select name="language" id="" class="form-select-sm">
+            <option value="hindi">हिन्दी</option>
+            <option value="english">English</option>
+        </select>
+        
+        <div class="row category_section">
+            <div class="col-sm-12 mt-3">
+                <div class="circle-icon">
+                    <i class="fas fa-house fa-fw side_icons"></i>
+                </div>
+                <span class="icons_name"> Home</span class="icons_name">
+            </div>
+            <div class="col-sm-12 mt-3">
+                <div class="circle-icon">
+                    <i class="fa-solid fa-landmark-dome fa-fw side_icons"></i>
+                </div>
+                <span class="icons_name"> Politics</span class="icons_name">
+            </div>
+            <div class="col-sm-12 mt-3">
+                <div class="circle-icon">
+                    <i class="fa-solid fa-person-running fa-fw side_icons"></i>
+                </div>
+                <span class="icons_name"> Sports</span class="icons_name">
+            </div>
+            <div class="col-sm-12 mt-3">
+                <div class="circle-icon">
+                    <i class="fas fa-house fa-fw side_icons"></i>
+                </div>
+                <span class="icons_name"> Defence</span class="icons_name">
+            </div>
+            <div class="col-sm-12 mt-3">
+                <div class="circle-icon">
+                    <i class="fas fa-house fa-fw side_icons"></i>
+                </div>
+                <span class="icons_name"> Curren Affairs</span class="icons_name">
+            </div>
+            <div class="col-sm-12 mt-3">
+                <div class="circle-icon">
+                    <i class="fas fa-house fa-fw side_icons"></i>
+                </div>
+                <span class="icons_name"> Upcoming Movies</span class="icons_name">
+            </div>
+            <div class="col-sm-12 mt-3">
+                <div class="circle-icon">
+                    <i class="fas fa-house fa-fw side_icons"></i>
+                </div>
+                <span class="icons_name"> 18+ News</span class="icons_name">
+            </div>
+            <div class="col-sm-12 mt-3">
+                <div class="circle-icon">
+                    <i class="fas fa-house fa-fw side_icons"></i>
+                </div>
+                <span class="icons_name"> Entertnment</span class="icons_name">
+            </div>
+            <div class="col-sm-12 mt-3">
+                <div class="circle-icon">
+                    <i class="fas fa-house fa-fw side_icons"></i>
+                </div>
+                <span class="icons_name"> Entertnment</span class="icons_name">
+            </div>
+            <div class="col-sm-12 mt-3">
+                <div class="circle-icon">
+                    <i class="fas fa-house fa-fw side_icons"></i>
+                </div>
+                <span class="icons_name"> Entertnment</span class="icons_name">
+            </div>
+
+        </div>
+    </div>
+    <!-- Sidebar end -->
+
+
+    <!-- Page Content -->
+    <section>
+        <div class="content_section">
+            <div class="container">
+                <div class="row color_row m-2">
+                    <div class="col-md-8">
+                        <div class="weather">
+                            <input id="weather_city" type="search" placeholder="Enter city"><i id="weather_search" class="fa-solid fa-magnifying-glass mx-2"></i>
+                            <p class="trendings m-2" id="weather_city_heading">WEATHER</p>
+                            <div class="weather_data m-2">
+                                <p id="temp_val" class="temp_val"></p>
+                            </div>
+                                <div class="text-center">
+                                    <img id="weather_icon" alt="">
+                                    <p id="weather_condition"></p>
+                                </div>
+                                <div class="weather_data pt-3 ms-2">
+                                <p class="temp">Humidity- <span class="weather_params" id="humidity">32</span></p>
+                                <p class="temp">Rain- <span class="weather_params" id="rain"></span></p>
+                                <p class="temp">Wind- <span class="weather_params" id="wind"></span></p>
+        
+                                </div>
+                        </div>
+                    </div>
+                    <div class="col-md-1">
+                        <div class="live_tv my-4"><img src="images/live.png" alt=""></div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="search_news my-4 d-flex">
+                            <input type="search" class="form-control" placeholder="Search">
+                            <i class="fa-solid fa-magnifying-glass fa-xl my-3 mx-2"></i>
+                        </div>
+                        <!-- <button class="btn">search</button> -->
+                    </div>
+                </div>
+                
+            </div>
+            <div class="top_headline">
+                <p class="trendings">TRENDINGS</p>
+                <p class="trending_topics">WC2023</p>
+                <p class="trending_topics">Election2023</p>
+                <p class="trending_topics">Indian Cinema</p>
+                <p class="trending_topics">Boby Deol</p>
+            </div>
+
+            <div class="top_news my-3 ms-3 p-2 fluid-container">
+                <h3 class="top_nes_heading">TOP NEWS</h3>
+                <div class="carousel-container">
+                    <div class="carousel">
+                        <div class="product">
+                            <figure>
+                                <img src="images/news1.jpg" alt="Product 1">
+                                <figcaption class='mt-1'>
+                                    <p class="top_news_topic">Breaking News</p>
+                                    <p class="top_news_desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                        Blanditiis, impedit!</p>
+                                    <p class="top_news_read">Read More</p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="product">
+                            <figure>
+                                <img src="images/news2.jpg" alt="Product 1">
+                                <figcaption class='mt-1'>
+                                    <p class="top_news_topic">Modiji</p>
+                                    <p class="top_news_desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                        Blanditiis, impedit!</p>
+                                    <p class="top_news_read">Read More</p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="product">
+                            <figure>
+                                <img src="images/news3.jpg" alt="Product 1">
+                                <figcaption class='mt-1'>
+                                    <p class="top_news_topic">Defence</p>
+                                    <p class="top_news_desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                        Blanditiis, impedit!</p>
+                                    <p class="top_news_read">Read More</p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="product">
+                            <figure>
+                                <img src="images/news4.jpg" alt="Product 1">
+                                <figcaption class='mt-1'>
+                                    <p class="top_news_topic">Hot News</p>
+                                    <p class="top_news_desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                        Blanditiis, impedit!</p>
+                                    <p class="top_news_read">Read More</p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="product">
+                            <figure>
+                                <img src="images/news5.jpg" alt="Product 1">
+                                <figcaption class='mt-1'>
+                                    <p class="top_news_topic">Elections</p>
+                                    <p class="top_news_desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                        Blanditiis, impedit!</p>
+                                    <p class="top_news_read">Read More</p>
+                                </figcaption>
+                            </figure>
+
+                        </div>
+                        <div class="product">
+                            <figure>
+                                <img src="images/news6.jpg" alt="Product 1">
+                                <figcaption class='mt-1'>
+                                    <p class="top_news_topic">Sports</p>
+                                    <p class="top_news_desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                        Blanditiis, impedit!</p>
+                                    <p class="top_news_read">Read More</p>
+                                </figcaption>
+                            </figure>
+
+                        </div>
+
+                        <!-- Add more product items with images as needed -->
+                    </div>
+                    <button class="prev-button">&lt;</button>
+                    <button class="next-button">&gt;</button>
+                </div>
+            </div>
+            <article class="sport_market">
+                <div class="container">
+                    <div class="row gx-3">
+                        <div class="col-md-7">
+                            <h3 class="bgheading_yellow ps-2">SPORTS</h3>   
+                            <div class="card  sport_card">
+                                <div class="card-body">
+                                  <h5 class="card-title">Ind vs Aus</h5>
+                                  <p class="card-text"><span class="sport_icon"><i class="fa-solid fa-flag"></i></span><span class="sport_team">Ind</span><span class="sport_score">435/2</span></p>
+                                  <p class="card-text"><span class="sport_icon"><i class="fa-solid fa-flag"></i></span><span class="sport_team">AUS</span><span class="sport_score">45/2</span></p>
+                                  <p>Aus need 390 more runs</p>
+                                </div>
+                              </div>
+                            <div class="card  sport_card">
+                                <div class="card-body">
+                                  <h5 class="card-title">Ind vs Aus</h5>
+                                  <p class="card-text"><span class="sport_icon"><i class="fa-solid fa-flag"></i></span><span class="sport_team">Ind</span><span class="sport_score">435/2</span></p>
+                                  <p class="card-text"><span class="sport_icon"><i class="fa-solid fa-flag"></i></span><span class="sport_team">AUS</span><span class="sport_score">45/2</span></p>
+                                  <p>Aus need 390 more runs</p>
+                                </div>
+                              </div>   
+                              <h3 class="bgheading_yellow ps-2">Live News</h3>   
+                    <div class="row gx-3">
+                        <div class="col">
+                            <div class="card vedio_cont">
+                                <iframe width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/H5kPSzyc5gY?si=HIBfx6at9BlqxeNY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>                            
+                                <div class="card-body">
+                                  <p class="card-text">the card's content.</p>
+                                </div>
+                              </div>
+                            <div class="card vedio_cont">
+                                <iframe width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/H5kPSzyc5gY?si=HIBfx6at9BlqxeNY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>                            
+                                <div class="card-body">
+                                  <p class="card-text">the card's content.</p>
+                                </div>
+                              </div>
+                            
+                        </div>
+                        
+                    </div>      
+                        </div>
+                        <div class="col-md-5">
+                            <div class="sensex me-2">
+                                <h3 class="bgheading_yellow">Market News</h3>   
+                                <div class="row sensex_row pt-3">
+                                    <div class="col-md-6">
+                                        <h6 class="market_subhead">Top Gainer <i class="fa-solid fa-arrow-trend-up gain_price"></i></h6>
+                                        <table class="table">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="smallpera">Tata Consultancy Services</td>
+                                                    <td class="">
+                                                        <p class="current_price smallpera">&#8377;3,861</p>
+                                                        <p class="gain_price smalltxt">+198(5.4%)</p>
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                    <td class="smallpera">Tata  Moters</td>
+                                                    <td class="">
+                                                        <p class="current_price smallpera">&#8377;3,861</p>
+                                                        <p class="gain_price smalltxt">+198(5.4%)</p>
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                    <td class="smallpera">Chatak Services</td>
+                                                    <td class="">
+                                                        <p class="current_price smallpera">&#8377;3,861</p>
+                                                        <p class="gain_price smalltxt">+198(5.4%)</p>
+                                                    </td>
+                                                    
+                                                </tr>
+                                                
+                                            </tbody>
+                                        </table>
+                                        </div>
+                                    <div class="col-md-6">
+                                        <h6 class="market_subhead">Top Losers <i class="fa-solid fa-arrow-trend-down lose_price"></i></h6>
+                                        <table class="table">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="smallpera"> Consultancy Services</td>
+                                                    <td class="">
+                                                        <p class="current_price smallpera">&#8377;3,861</p>
+                                                        <p class="lose_price smalltxt">-198(5.4%)</p>
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                    <td class="smallpera">Tururu  Moters</td>
+                                                    <td class="">
+                                                        <p class="current_price smallpera">&#8377;3,861</p>
+                                                        <p class="lose_price smalltxt">-198(5.4%)</p>
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                    <td class="smallpera">somnath pvt Services</td>
+                                                    <td class="">
+                                                        <p class="current_price smallpera">&#8377;3,861</p>
+                                                        <p class="lose_price smalltxt">-198(5.4%)</p>
+                                                    </td>
+                                                    
+                                                </tr>
+                                                
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="col">
+                                        <h6 class="market_subhead">Stocks in News</h6>
+                                        <table class="table">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="smallpera">Chatak News pvt ltd</td>
+                                                    <td class="">
+                                                        <p class="current_price smallpera">&#8377;3,861</p>
+                                                        <p class="gain_price smalltxt">+198(5.4%)</p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="smallpera">Chatak News franchising pvt ltd</td>
+                                                    <td class="">
+                                                        <p class="current_price smallpera">&#8377;3,861</p>
+                                                        <p class="gain_price smalltxt">+198(5.4%)</p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="smallpera">Kal Tak News</td>
+                                                    <td class="">
+                                                        <p class="current_price smallpera">&#8377;3,861</p>
+                                                        <p class="lose_price smalltxt">-18(5.4%)</p>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                
+
+                                
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+                </div>
+            </article>
+
+            <article class="mid_news my-3">
+                <div class="container">
+                <div class="row gx-2">
+                    <div class="col-md-8">
+                        <div class="mid_news_main p-3">
+                            <h3 class="bgheading_yellow">CELEBRITIES</h3>
+                            <P class="desc_bold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id consequatur
+                                debitis, nostrum itaque officiis consequuntur tempora optio obcaecati aliquid, assumenda
+                                nesciunt, quae cupiditate?
+                            </P>
+                            <figure>
+                                <img src="images/animal.jpg" class="mid_news_img" alt="">
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="mid_news_side p-2">
+                            <h3 class="bgheading_yellow text-center">HEADLINES</h3>
+                            <div class="heading_list">
+                            <ul>
+                                <li class="desc_bold">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae, provident!</li>
+                                <li class="desc_bold">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae, provident!</li>
+                                <li class="desc_bold">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae, provident!</li>
+                                <li class="desc_bold">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae, provident!</li>
+                                <li class="desc_bold">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae, provident!</li>
+                                <li class="desc_bold">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae, provident!</li>
+                                <li class="desc_bold">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae, provident!</li>
+                                <li class="desc_bold">Lorem ipsum dolor!</li>
+                                <li class="desc_bold">Lorem ipsum dolor!</li>
+                                <li class="desc_bold">Lorem ipsum dolor!</li>
+                            </ul>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="article mt-3">
+                    <div class="container">
+
+                        <div class="row gx-2">
+                            <div class="col-md-8">
+                                <div class="news_blog row">
+                                    <div class="col-md-8">
+                                        <p class="smyellowhead">Elections</p>
+                                        <p class="blog_subhead">Who will be next CM of Rajesthan, Wait continues..</p>
+                                        <p class="smallpera">BJP top leaders are in deep consideration regarding Who will be next CM of Rajesthan, Wait continues..</p>
+                                        <p class="top_news_read">Read More</p>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img src="images/news2.jpg" alt="">
+                                    </div>
+        
+                                </div>
+                                <div class="news_blog row">
+                                    <div class="col-md-8">
+                                        <p class="smyellowhead">Elections</p>
+                                        <p class="blog_subhead">Who will be next CM of Rajesthan, Wait continues..</p>
+                                        <p class="smallpera">BJP top leaders are in deep consideration regarding Who will be next CM of Rajesthan, Wait continues..</p>
+                                        <p class="top_news_read">Read More</p>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img src="images/news2.jpg" alt="">
+                                    </div>
+        
+                                </div>
+                                <div class="news_blog row">
+                                    <div class="col-md-8">
+                                        <p class="smyellowhead">Elections</p>
+                                        <p class="blog_subhead">Who will be next CM of Rajesthan, Wait continues..</p>
+                                        <p class="smallpera">BJP top leaders are in deep consideration regarding Who will be next CM of Rajesthan, Wait continues..</p>
+                                        <p class="top_news_read">Read More</p>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img src="images/news2.jpg" alt="">
+                                    </div>
+        
+                                </div>
+                                <div class="news_blog row">
+                                    <div class="col-md-8">
+                                        <p class="smyellowhead">Elections</p>
+                                        <p class="blog_subhead">Who will be next CM of Rajesthan, Wait continues..</p>
+                                        <p class="smallpera">BJP top leaders are in deep consideration regarding Who will be next CM of Rajesthan, Wait continues..</p>
+                                        <p class="top_news_read">Read More</p>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img src="images/news2.jpg" alt="">
+                                    </div>
+        
+                                </div>
+                            </div>
+                            <div class="col-md-4 ">
+                                <div class="recomended">
+                                    <h3 class="bgheading_yellow text-center">RECOMENDED</h3>
+                                    <figure>
+                                        <img src="images/news4.jpg" alt="">
+                                        <figcaption>
+                                            <i class="fa-solid fa-fire-flame-curved"></i> Sunny's hot reaction after item song
+                                        </figcaption>
+                                    </figure>
+                                    <figure>
+                                        <img src="images/news5.jpg" alt="">
+                                        <figcaption>
+                                            <i class="fa-solid fa-fire-flame-curved"></i> Huge win for BJP, Dominates 3 states with big margin
+                                        </figcaption>
+                                    </figure>
+                                    <figure>
+                                        <img src="images/news6.jpg" alt="">
+                                        <figcaption>
+                                            <i class="fa-solid fa-fire-flame-curved"></i> India ready to dominate T20 after sad loss in WC-2023, getting ready foe T-20 Wc
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </article>
+        </div>
+    </section>
+    <footer>
+        <h4>Chatak Footer</h4>
+    </footer>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+<script src="script.js"></script>
+
+</html>
