@@ -5,7 +5,7 @@ function adjustStyles() {
     document.querySelector('.w3-sidebar').style.marginTop = navbarHeight + 'px';
 }
 adjustStyles()
-// window.addEventListener('load', adjustStyles);
+window.addEventListener('load', adjustStyles);
 window.addEventListener('resize', adjustStyles);
 // calculating navbar height end*******************************************************
 
