@@ -4,8 +4,8 @@ function adjustStyles() {
     document.querySelector('.content_section').style.paddingTop = navbarHeight + 'px';
     document.querySelector('.w3-sidebar').style.marginTop = navbarHeight + 'px';
 }
-
-window.addEventListener('load', adjustStyles);
+adjustStyles()
+// window.addEventListener('load', adjustStyles);
 window.addEventListener('resize', adjustStyles);
 // calculating navbar height end*******************************************************
 
@@ -123,3 +123,61 @@ weather_search.addEventListener('click',()=>{
 
 
 // fetching weather Api end*******************************
+
+// sports card start 
+    var card_num;
+    var click = 0;
+
+    var crousel = document.querySelectorAll(".sport_card")
+    console.log(crousel);
+    function handleScreenSizeChange(mediaQuery) {
+        if (mediaQuery.matches) {
+            card_num = 1;  //Number of cards for mobile
+            click = 0
+            crousel.forEach(
+                (slide, indx) => {
+                    slide.style.left = `${indx * 100}%`
+                })
+        } else {
+            card_num = 3; //Number of card for desktop
+            click= 0
+            crousel.forEach(
+                (slide, indx) => {
+                    slide.style.left = `${indx * 33.2}%`
+                })
+        }
+    }
+
+    const mediaQuery = window.matchMedia('(max-width: 768px)');
+
+    handleScreenSizeChange(mediaQuery);
+
+    mediaQuery.addEventListener('change', handleScreenSizeChange);
+
+    function slide() {
+        crousel.forEach((val, indx) => {
+            val.style.transform = `translateX(-${click * 100}% )`
+        })
+    }
+    function nexts() {
+        if (click == crousel.length - card_num) {
+            click = 0
+        } else {
+            click++;
+        }
+        slide();
+    }
+    function prevs() {
+        if (click == 0) {
+            click = crousel.length - card_num;
+            slide();
+        } else {
+            click--;
+            slide();
+
+        }
+
+
+    }
+    // sports card end
+    

@@ -19,10 +19,19 @@
     <nav class="topheader navbar bg-body-tertiary">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">CHATAK NEWS</a>
-            <!-- <form class="d-flex" role="search">
+          
+            <ul class="desk_view"> 
+                <li>facebook_Account <i class="fa-brands fa-facebook"></i></li>
+                <li>Twitter_Account <i class="fa-brands fa-twitter"></i></li>
+                <li>Instagram_Account <i class="fa-brands fa-instagram"></i></li>
+            </ul>
+            <form class="d-flex mob_view" role="search">
                 <input class="form-control me-2" type="search" placeholder="Search" id="search_input" aria-label="Search">
                 <p class="text-center my-auto"><i class="fa-solid fa-magnifying-glass fa-xl"></i></p>
-            </form> -->
+            </form>
+            <!-- <img src="images/live.png" class="live_navbar mob_view" alt=""> -->
+            <div class="live_tv_head my-4 mob_view"><img src="images/live.png" alt=""></div>
+
         </div>
     </nav>
     <!-- navbar end**************** -->
@@ -105,16 +114,16 @@
     <!-- Page Content -->
     <section>
         <div class="content_section">
-            <div class="container">
-                <div class="row color_row m-2">
+            <div class="container-fluid weather_container">
+                <div class="row color_row">
                     <div class="col-md-8">
                         <div class="weather">
                             <input id="weather_city" type="search" placeholder="Enter city"><i id="weather_search" class="fa-solid fa-magnifying-glass mx-2"></i>
-                            <p class="trendings m-2" id="weather_city_heading">WEATHER</p>
+                            <p class="trendings weather_city_heading pt-2" id="weather_city_heading">WEATHER</p>
                             <div class="weather_data m-2">
                                 <p id="temp_val" class="temp_val"></p>
                             </div>
-                                <div class="text-center">
+                                <div class="text-center desk_view">
                                     <img id="weather_icon" alt="">
                                     <p id="weather_condition"></p>
                                 </div>
@@ -126,10 +135,10 @@
                                 </div>
                         </div>
                     </div>
-                    <div class="col-md-1">
+                    <div class="col-md-1 desk_view">
                         <div class="live_tv my-4"><img src="images/live.png" alt=""></div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-3 desk_view">
                         <div class="search_news my-4 d-flex">
                             <input type="search" class="form-control" placeholder="Search">
                             <i class="fa-solid fa-magnifying-glass fa-xl my-3 mx-2"></i>
@@ -139,6 +148,7 @@
                 </div>
                 
             </div>
+            
             <div class="top_headline">
                 <p class="trendings">TRENDINGS</p>
                 <p class="trending_topics">WC2023</p>
@@ -229,11 +239,11 @@
             <article class="sport_market">
                 <div class="container">
                     <div class="row gx-3">
-                        <div class="col-md-7">
-                            <h3 class="bgheading_yellow ps-2">SPORTS</h3>   
+                        <h3 class="bgheading_yellow ps-2">Sports</h3>   
+                        <div class="col-md-12 sport_row">
                             <div class="card  sport_card">
                                 <div class="card-body">
-                                  <h5 class="card-title">Ind vs Aus</h5>
+                                  <h5 class="card-title">Ind1 vs Aus1</h5>
                                   <p class="card-text"><span class="sport_icon"><i class="fa-solid fa-flag"></i></span><span class="sport_team">Ind</span><span class="sport_score">435/2</span></p>
                                   <p class="card-text"><span class="sport_icon"><i class="fa-solid fa-flag"></i></span><span class="sport_team">AUS</span><span class="sport_score">45/2</span></p>
                                   <p>Aus need 390 more runs</p>
@@ -241,127 +251,128 @@
                               </div>
                             <div class="card  sport_card">
                                 <div class="card-body">
-                                  <h5 class="card-title">Ind vs Aus</h5>
+                                  <h5 class="card-title">Ind2 vs Aus2</h5>
                                   <p class="card-text"><span class="sport_icon"><i class="fa-solid fa-flag"></i></span><span class="sport_team">Ind</span><span class="sport_score">435/2</span></p>
                                   <p class="card-text"><span class="sport_icon"><i class="fa-solid fa-flag"></i></span><span class="sport_team">AUS</span><span class="sport_score">45/2</span></p>
                                   <p>Aus need 390 more runs</p>
                                 </div>
                               </div>   
-                              <h3 class="bgheading_yellow ps-2">Live News</h3>   
-                    <div class="row gx-3">
-                        <div class="col">
-                            <div class="card vedio_cont">
-                                <iframe width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/H5kPSzyc5gY?si=HIBfx6at9BlqxeNY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>                            
+                            <div class="card  sport_card">
                                 <div class="card-body">
-                                  <p class="card-text">the card's content.</p>
+                                  <h5 class="card-title">Ind3 vs Aus3</h5>
+                                  <p class="card-text"><span class="sport_icon"><i class="fa-solid fa-flag"></i></span><span class="sport_team">Ind</span><span class="sport_score">435/2</span></p>
+                                  <p class="card-text"><span class="sport_icon"><i class="fa-solid fa-flag"></i></span><span class="sport_team">AUS</span><span class="sport_score">45/2</span></p>
+                                  <p>Aus need 390 more runs</p>
                                 </div>
-                              </div>
-                            <div class="card vedio_cont">
+                              </div>   
+                            <div class="card  sport_card">
+                                <div class="card-body">
+                                  <h5 class="card-title">Ind4 vs Aus4</h5>
+                                  <p class="card-text"><span class="sport_icon"><i class="fa-solid fa-flag"></i></span><span class="sport_team">Ind</span><span class="sport_score">435/2</span></p>
+                                  <p class="card-text"><span class="sport_icon"><i class="fa-solid fa-flag"></i></span><span class="sport_team">AUS</span><span class="sport_score">45/2</span></p>
+                                  <p>Aus need 390 more runs</p>
+                                </div>
+                              </div>   
+                            <div class="card  sport_card">
+                                <div class="card-body">
+                                  <h5 class="card-title">Ind5 vs Aus5</h5>
+                                  <p class="card-text"><span class="sport_icon"><i class="fa-solid fa-flag"></i></span><span class="sport_team">Ind</span><span class="sport_score">435/2</span></p>
+                                  <p class="card-text"><span class="sport_icon"><i class="fa-solid fa-flag"></i></span><span class="sport_team">AUS</span><span class="sport_score">45/2</span></p>
+                                  <p>Aus need 390 more runs</p>
+                                </div>
+                              </div>   
+                               <p class="prevs slide_button" onclick="prevs()"><</p>
+                               <p class="nexts slide_button" onclick="nexts()">></p>
+                        </div>
+                    </div>
+
+                    <div class="row gx-3 mt-3">
+                        <div class="col-md-7">
+                            <h3 class="bgheading_yellow ps-2">Live News</h3>   
+                            <div class=" vedio_cont">
+                                <iframe width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/7raJ1JDMqyc?si=IbHC-TKO9NXf2tjL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>                                  
+                                <div class="card-body">
+                                <p class="card-text">Watch live news. Lorem ipsum dolor sit amet.</p>
+                                </div>
+                            </div>
+                            <div class=" vedio_cont">
                                 <iframe width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/H5kPSzyc5gY?si=HIBfx6at9BlqxeNY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>                            
                                 <div class="card-body">
-                                  <p class="card-text">the card's content.</p>
+                                  <p class="card-text">the carjkh Lorem, ipsum dolor. knd's content.</p>
                                 </div>
                               </div>
                             
                         </div>
                         
-                    </div>      
-                        </div>
                         <div class="col-md-5">
                             <div class="sensex me-2">
                                 <h3 class="bgheading_yellow">Market News</h3>   
                                 <div class="row sensex_row pt-3">
                                     <div class="col-md-6">
-                                        <h6 class="market_subhead">Top Gainer <i class="fa-solid fa-arrow-trend-up gain_price"></i></h6>
-                                        <table class="table">
-                                            <tbody>
-                                                <tr>
-                                                    <td class="smallpera">Tata Consultancy Services</td>
-                                                    <td class="">
-                                                        <p class="current_price smallpera">&#8377;3,861</p>
-                                                        <p class="gain_price smalltxt">+198(5.4%)</p>
-                                                    </td>
-                                                    
-                                                </tr>
-                                                <tr>
-                                                    <td class="smallpera">Tata  Moters</td>
-                                                    <td class="">
-                                                        <p class="current_price smallpera">&#8377;3,861</p>
-                                                        <p class="gain_price smalltxt">+198(5.4%)</p>
-                                                    </td>
-                                                    
-                                                </tr>
-                                                <tr>
-                                                    <td class="smallpera">Chatak Services</td>
-                                                    <td class="">
-                                                        <p class="current_price smallpera">&#8377;3,861</p>
-                                                        <p class="gain_price smalltxt">+198(5.4%)</p>
-                                                    </td>
-                                                    
-                                                </tr>
-                                                
-                                            </tbody>
-                                        </table>
+                                        <h6 class="market_subhead">Top Gainer <i class="fa-solid fa-arrow-trend-up gain_price "></i></h6>
+                                        <div class="row gain_lose">
+                                            <div class="col-md-8 xsmallpera">Tata Consultancy Services</div>
+                                            <div class="col-md-4">
+                                                <p class="current_price xsmallpera">&#8377;3,861</p>
+                                                <p class="gain_price">+198(5.4%)</p></div>
+                                        </div>
+                                        <div class="row gain_lose">
+                                            <div class="col-md-8 xsmallpera">Tata Consultancy Services</div>
+                                            <div class="col-md-4">
+                                                <p class="current_price xsmallpera">&#8377;3,861</p>
+                                                <p class="gain_price ">+198(5.4%)</p></div>
+                                        </div>
+                                        <div class="row gain_lose">
+                                            <div class="col-md-8 xsmallpera">Tata Consultancy Services</div>
+                                            <div class="col-md-4">
+                                                <p class="current_price xsmallpera">&#8377;3,861</p>
+                                                <p class="gain_price">+198(5.4%)</p></div>
+                                        </div>
+                                        
+                                        
                                         </div>
                                     <div class="col-md-6">
                                         <h6 class="market_subhead">Top Losers <i class="fa-solid fa-arrow-trend-down lose_price"></i></h6>
-                                        <table class="table">
-                                            <tbody>
-                                                <tr>
-                                                    <td class="smallpera"> Consultancy Services</td>
-                                                    <td class="">
-                                                        <p class="current_price smallpera">&#8377;3,861</p>
-                                                        <p class="lose_price smalltxt">-198(5.4%)</p>
-                                                    </td>
-                                                    
-                                                </tr>
-                                                <tr>
-                                                    <td class="smallpera">Tururu  Moters</td>
-                                                    <td class="">
-                                                        <p class="current_price smallpera">&#8377;3,861</p>
-                                                        <p class="lose_price smalltxt">-198(5.4%)</p>
-                                                    </td>
-                                                    
-                                                </tr>
-                                                <tr>
-                                                    <td class="smallpera">somnath pvt Services</td>
-                                                    <td class="">
-                                                        <p class="current_price smallpera">&#8377;3,861</p>
-                                                        <p class="lose_price smalltxt">-198(5.4%)</p>
-                                                    </td>
-                                                    
-                                                </tr>
-                                                
-                                            </tbody>
-                                        </table>
+                                        <div class="row gain_lose">
+                                            <div class="col-md-8 xsmallpera">Tata Consultancy Services</div>
+                                            <div class="col-md-4">
+                                                <p class="current_price xsmallpera">&#8377;3,861</p>
+                                                <p class="lose_price">-198(5.4%)</p></div>
+                                        </div>
+                                        <div class="row gain_lose">
+                                            <div class="col-md-8 xsmallpera">Suzlon Services</div>
+                                            <div class="col-md-4">
+                                                <p class="current_price xsmallpera">&#8377;3,861</p>
+                                                <p class="lose_price">-198(5.4%)</p></div>
+                                        </div>
+                                        <div class="row gain_lose">
+                                            <div class="col-md-8 xsmallpera">Tata Consultancy Services</div>
+                                            <div class="col-md-4">
+                                                <p class="current_price xsmallpera">&#8377;3,861</p>
+                                                <p class="lose_price">-198(5.4%)</p></div>
+                                        </div>
                                     </div>
-                                    <div class="col">
+                                    <div class="col mt-3">
                                         <h6 class="market_subhead">Stocks in News</h6>
-                                        <table class="table">
-                                            <tbody>
-                                                <tr>
-                                                    <td class="smallpera">Chatak News pvt ltd</td>
-                                                    <td class="">
-                                                        <p class="current_price smallpera">&#8377;3,861</p>
-                                                        <p class="gain_price smalltxt">+198(5.4%)</p>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="smallpera">Chatak News franchising pvt ltd</td>
-                                                    <td class="">
-                                                        <p class="current_price smallpera">&#8377;3,861</p>
-                                                        <p class="gain_price smalltxt">+198(5.4%)</p>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="smallpera">Kal Tak News</td>
-                                                    <td class="">
-                                                        <p class="current_price smallpera">&#8377;3,861</p>
-                                                        <p class="lose_price smalltxt">-18(5.4%)</p>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
+                                        <div class="row gain_lose">
+                                            <div class="col-md-8 xsmallpera">Tata Consultancy Services</div>
+                                            <div class="col-md-4">
+                                                <p class="current_price xsmallpera">&#8377;3,861 <span class="gain_price">+198(5.4%) </span></p>
+                                            </div>
+                                        </div>
+                                        <div class="row gain_lose">
+                                            <div class="col-md-8 xsmallpera">Tata Consultancy Services</div>
+                                            <div class="col-md-4">
+                                                <p class="current_price xsmallpera">&#8377;3,861 <span class="gain_price">+198(5.4%) </span></p>
+                                            </div>
+                                        </div>
+                                        <div class="row gain_lose">
+                                            <div class="col-md-8 xsmallpera">Tata Consultancy Services</div>
+                                            <div class="col-md-4">
+                                                <p class="current_price xsmallpera">&#8377;3,861 <span class="gain_price">+198(5.4%) </span></p>
+                                            </div>
+                                        </div>
+                                        
                                     </div>
                                 </div>
                                 
@@ -370,7 +381,8 @@
                             </div>
                             
                         </div>
-                    </div>
+                    </div>     
+
                     
                 </div>
             </article>
@@ -380,7 +392,7 @@
                 <div class="row gx-2">
                     <div class="col-md-8">
                         <div class="mid_news_main p-3">
-                            <h3 class="bgheading_yellow">CELEBRITIES</h3>
+                            <h3 class="bgheading_yellow">Celebrities</h3>
                             <P class="desc_bold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id consequatur
                                 debitis, nostrum itaque officiis consequuntur tempora optio obcaecati aliquid, assumenda
                                 nesciunt, quae cupiditate?
@@ -392,7 +404,7 @@
                     </div>
                     <div class="col-md-4">
                         <div class="mid_news_side p-2">
-                            <h3 class="bgheading_yellow text-center">HEADLINES</h3>
+                            <h3 class="bgheading_yellow text-center">Headlines</h3>
                             <div class="heading_list">
                             <ul>
                                 <li class="desc_bold">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae, provident!</li>
@@ -495,7 +507,33 @@
         </div>
     </section>
     <footer>
-        <h4>Chatak Footer</h4>
+        <div class="row">
+            <div class="col-md-3">
+                <ul>
+                    <li>Complaint</li>
+                    <li>Privacy Policy</li>
+                    <li>Disclaimer</li>
+                    <li>Investors</li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <h4>Follow Us</h4>
+                <div class="foot_icons">
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                </div>
+                <p class="copywrite">&#x24B8;Chatak News All Rights Reserved</p>
+            </div>
+            <div class="col-md-3">
+                <ul>
+                    <li>About Us</li>
+                    <li>Contact Us</li>
+                    <li>info@chatak.com</li>
+                    <li>1234567890</li>
+                </ul>
+            </div>
+        </div>
     </footer>
 
 </body>
